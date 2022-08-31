@@ -1,0 +1,54 @@
+<!-- http://api.weatherstack.com/current?access_key=34dc59d9f57ffc7e121d531816f1f295&query=New%20York -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App For Me</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="head">
+        <div class="logo">
+            <img src="https://weatherstack.com/site_images/weatherstack_logo_white.png" alt="">
+            <h1 class="text-center border bg-white mt-2"><span><img class="imgehigh img-fluid" src="image/sunny_weather.gif" alt=""></span> Welcome To Weather Application</h1>
+        </div>
+    </div>
+    <div class="weatherContent">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="imagegif mb-5">
+                        <img class="img-fluid rounded-2" src="image/weather-animated-icons.gif" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input id="inputtext" class="form-control text-center text-danger" type="text" placeholder="Enter Your City Name ...">
+                    <div class="btn">
+                        <button onclick="incrementValue()" class="btn btn-success">Search</button>
+                        <button onclick="amas()" class="btn btn-success">Search1</button>
+
+                    </div>
+                    <div class="contentHero">
+                        <!-- <h6 >Click: <span id="clickme">0</span></h6> -->
+                        <input id="valueadd" type="text" value="0" disabled >
+                        <input id="valueadd1" type="text" value="0" disabled >
+
+                        <!-- <h1 id=""></h1> -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="application.js"></script>
+</body>
+</html>
