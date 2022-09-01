@@ -1,20 +1,19 @@
-// function functionWarkNow(){
-//     // console.log("Click Marce reee Baba")
-//     const num = document.getElementById("valueadd").value;
-//     const add = num++;
-//     console.log(add);
-// }
+
 
 function incrementValue(){
-    var value = parseInt(document.getElementById('valueadd').value,);
-    value = isNaN(value) ? 0 : value;
-    value++;
-    // console.log(value);
-    document.getElementById('valueadd').value = value;
+    const inputtxt = document.getElementById("inputtext").value;
+    if(inputtxt == ""){
+        alert("Please Enter Your City Name.")
+    }
+    else{
+        let item = parseInt (document.getElementById("valueadd").value);
+        item = item +1
+        document.getElementById("valueadd").value = item;
+        document.getElementById("inputtext").value = "";   
+    }
 }
 
-function amas(){
-    // console.log("click marce")
-    let item = parseInt (document.getElementById())
 
-}
+    fetch('https://randomuser.me/api/?results=5000')
+        .then(res => res.json())
+        .then(data = console.log(data))
